@@ -127,8 +127,8 @@ alpha.on('group-participants-update', async (anu) => {
       } else if (anu.action == 'promote') {
       	falfa = { key: {fromMe: false,participant: "0@s.whatsapp.net",
 		remoteJid: "0@s.whatsapp.net"},
-message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us",
-"inviteCode": "mememteeeekkeke","groupName": "Alphabot", 
+message: {"groupInviteMessage": {"groupJid": "120363037743581565@g.us",
+"inviteCode": "mememteeeekkeke","groupName": "Team-Toxic", 
 "caption": `Made With ❣️`, 'jpegThumbnail': fs.readFileSync(`./image/${setting.thumbnail}`)}}}
          
 			const mdata = await alpha.groupMetadata(anu.jid)
@@ -143,15 +143,15 @@ _Selamat jabatan kamu naik_`
 			try {
 				ppimg = await alpha.getProfilePicture(numm)
 			} catch {
-				ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
+				ppimg = 'https://telegra.ph/file/618aa23f2aa64b594e0a1.jpg'
 			}
 			let buff = await getBuffer(ppimg)
 				alpha.sendMessage(mdata.id, buff, MessageType.image, {thumbnail: Buffer.alloc(0), quoted : falfa, caption: teks, contextInfo: { "mentionedJid" : [num], "forwardingScore":999,"isForwarded":true},sendEphemeral: true })
 		 } else if (anu.action == 'demote') {
 			falfa = { key: {fromMe: false,participant: "0@s.whatsapp.net",
 		remoteJid: "0@s.whatsapp.net"},
-message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us",
-"inviteCode": "mememteeeekkeke","groupName": "Alphabot", 
+message: {"groupInviteMessage": {"groupJid": "120363037743581565@g.us",
+"inviteCode": "mememteeeekkeke","groupName": "Team-Toxic", 
 "caption": `Made With ❣️`, 'jpegThumbnail': fs.readFileSync(`./image/${setting.thumbnail}`)}}}
          
 			numm = anu.participants[0]
@@ -166,7 +166,7 @@ _Kasian malah kena demote_`
 			try {
 				ppimg = await alpha.getProfilePicture(numm)
 			} catch {
-				ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
+				ppimg = 'https://telegra.ph/file/618aa23f2aa64b594e0a1.jpg'
 			}
 			let buff = await getBuffer(ppimg)
 				alpha.sendMessage(mdata.id, buff, MessageType.image, {quoted : falfa, caption: teks, contextInfo: { "mentionedJid" : [num], "forwardingScore":999,"isForwarded":true},sendEphemeral: true })
@@ -179,12 +179,12 @@ _Kasian malah kena demote_`
 /*alpha.on('chat-update', async (anu) => {
 	console.log(anu)
         falfa = { key: {fromMe: false,participant: "0@s.whatsapp.net",
-remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "Alphabot", "caption": `Made With ❤️`, 'jpegThumbnail': `./image/${setting.thumbnail}`}}}
+remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "120363037743581565@g.us","inviteCode": "mememteeeekkeke","groupName": "Team-Toxic", "caption": `Made With ❤️`, 'jpegThumbnail': `./image/${setting.thumbnail}`}}}
   metdata = await alpha.groupMetadata(anu.jid)
   try {
 					ppimg = await alpha.getProfilePicture(anu.jid)
 				} catch {
-					ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
+					ppimg = 'https://telegra.ph/file/618aa23f2aa64b594e0a1.jpg'
 				}
 			let buff = await getBuffer(ppimg)
     if(anu.announce == 'false'){
